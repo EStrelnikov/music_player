@@ -1,0 +1,108 @@
+body {
+	background: linear-gradient(to right,#9a1d86, #1595be);
+	margin: 0;
+	padding: 0;
+    font-weight: bold;
+}
+
+p {
+	margin: 0;
+}
+
+h3 {
+	margin: 5px 0;
+}
+    
+.wrapper {
+	height: 95vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.player {
+	padding: 30px;
+	border-radius: 20px;
+	background-color: #ddd;
+	width: 40vw;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.details {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.now-playing {
+	font-size: 1rem;
+}
+
+.track-name {
+	font-size: 2.0rem;
+}
+
+.track-artist {
+	margin-top: 5px;
+	font-size: 1.5rem;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 30px;
+	justify-content: center;
+}
+
+
+.playpause-track,
+.prev-track,
+.next-track {
+	cursor: pointer;
+	padding: 25px;
+	transition: 700ms;
+}
+
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+	-moz-box-shadow: 0px 6px 5px black;
+	-webkit-box-shadow: 0px 6px 5px black;
+	box-shadow: 0px 6px 5px black;
+	background: #e7e7e7;
+}
+
+.slider_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.seek_slider, .volume_slider {
+	cursor: grab;
+}
+
+.current-time,
+.total-duration {
+	padding: 10px;
+}
+
+.playlist {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.playlist > .active {
+	color: black;
+}
+
+.item {
+	cursor: pointer;
+	color: gray;
+}
+
+

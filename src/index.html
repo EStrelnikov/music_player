@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/img/music.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>L2 Player</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="player">
+          <div class="details">
+              <div class="now-playing">PLAYING 0 OF 0</div>
+              <div class="track-name">Track Name</div>
+          </div>
+          <div class="audio-player__waves"></div>
+          <div class="slider_container">
+              <div class="current-time">00:00</div>
+              <input type="range" min="1" max="100" value="0" class="seek_slider">
+              <div class="total-duration">00:00</div>
+          </div>
+          <div class="slider_container">
+              <img src="./assets/img/volume_down.svg" width="20px" ></img>
+              <input type="range" min="0" max="100" value="100" class="volume_slider">
+              <img src="./assets/img/volume_up.svg" width="20px" />
+          </div>
+          <div class="buttons">
+              <div class="prev-track">
+                <img src="./assets/img/prev.svg" width="25px" />
+               </div>
+               <div class="playpause-track">
+                  <img src="./assets/img/play.svg" width="35px"  />
+               </div>
+               <div class="next-track">
+                   <img src="./assets/img/next.svg" width="25px"/>
+               </div>
+          </div>
+          <div class="playlist">
+            <h3>Playlist:</h3>
+          </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/wavesurfer.js@7"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
